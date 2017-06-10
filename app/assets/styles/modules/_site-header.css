@@ -11,7 +11,7 @@
 
 	@mixin atMedium {
 		position: fixed;
-		background-color: rgba($mainBlue, 0.3);
+		background-color: rgba($mainBlue, 0.8);
 
 		&--dark {
 			background-color: rgba(23, 51, 72, .85);
@@ -33,20 +33,29 @@
 		transition: transform .3s ease-out;
 		transform-origin: 50% 0;
 		background-color: $mainBlue;
-		padding: 25px 36px;
+		height: 90px;
+		width: 350px;
 
 		@mixin atMedium {
 			left: auto;
 			transform: translateX(0);
 
 			.site-header--dark & {
-				transform: scale(.56);
+				transform: scale(.69);
 			}
 		}
 	}
 
 	&__logo__graphic {
-		text-indent: -9999px;
+		position: relative;
+		width: 80%;
+		height: 800%;
+		left: 50%;
+		transform: translateX(-50%);
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 7px;
+		padding: 0;
 	}
 
 	&__menu-icon {
@@ -131,5 +140,12 @@
 			z-index: 1;
 			transform: scale(1);
 		}
+	}
+}
+
+#about-me-image {
+	@mixin atMedium {
+		position: relative;
+		top: 30px;
 	}
 }
