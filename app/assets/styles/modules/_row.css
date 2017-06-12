@@ -53,6 +53,8 @@
 		&__medium-6 {
 			float: left;
 			width: 50%;
+			margin-right: -15%;
+			margin-left: -4%;
 		}
 
 		&__medium-8 {
@@ -78,6 +80,7 @@
 
 		&__large-4--larger {
 			width: 37%;
+			
 		}
 
 		&__large-6 {

@@ -44,4 +44,9 @@
 	&--no-t-margin {
 		margin-top: 0;
 	}
+
+	&--no-display {
+		opacity: 0;
+		margin-bottom: 0px;
+	}
 }
