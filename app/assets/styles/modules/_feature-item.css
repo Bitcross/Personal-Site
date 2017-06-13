@@ -5,8 +5,16 @@
 	margin-left: 10%;
 	
 
-	@mixin atSmall {
+	@mixin atMedium {
 		padding-left: 94px;
+	}
+
+	&__mobile-hide {
+		display: none;
+
+		@mixin atMedium {
+			display: block;
+		}
 	}
 
 }

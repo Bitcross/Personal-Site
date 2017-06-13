@@ -18,10 +18,24 @@
 		margin: 0 auto -80px auto;
 		position: relative;
 		top: -80px;
-		left: 75px;
+		left: 35%;
 
 		img {
-			width: 50%;
+			width: 30%;
+		}
+
+		@mixin atMedium {
+			left: 40%;
+			img {
+				width: 20%;
+			}
+		}
+
+		@mixin atLarge {
+			left: 85px;
+			img {
+				width: 50%;
+			}
 		}
 	}
 

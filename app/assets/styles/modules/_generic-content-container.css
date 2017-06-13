@@ -27,6 +27,22 @@
 		transform: translateX(0);
 	}
 }
+#now {
+	background-color: rgba($mainBlue, 0.1);
+}
+#now_list {
+	list-style: none;
+
+	li{
+		padding-bottom: 10px;
+		margin-left: -5%;
+		transform: translateX(-5%);
+
+		@mixin atMedium {
+			transform: translateX(0);
+		}
+	}
+}
 
 #skills {
 	height: 100%;
@@ -42,3 +58,4 @@
 		padding: 0px;
 	}
 }
+
