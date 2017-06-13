@@ -1418,6 +1418,18 @@ Instead edit gulp/templates/sprite */
 	        transform: scale(1.2);
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
+
+}
+
+.modal .section-title {
+  margin-bottom: 15px;
+}
+
+@media (min-width: 800px) {
+
+  .modal .section-title {
+    margin-top: 0px
+  }
 }
 
 .modal--is-visible {
@@ -1437,9 +1449,18 @@ Instead edit gulp/templates/sprite */
 
 .modal__description {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.65;
+  margin-top: -8px;
+  margin-bottom: -3px;
+}
+
+@media (min-width: 800px) {
+
+  .modal__description {
+    font-size: 1.3rem
+  }
 }
 
 .modal__close {
@@ -1457,6 +1478,161 @@ Instead edit gulp/templates/sprite */
 .modal__close:hover {
   color: #d59541;
   cursor: pointer;
+}
+
+.modal__contact {
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+  max-width: 450px;
+  overflow: hidden;
+  padding: 20px 12px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.modal__contact .inputContainer {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 5px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.modal__contact .inputContainer .message {
+  color: #FF5C5C;
+  background: #ffb8b8;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  margin: 0;
+  line-height: 2.5em;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.modal__contact .inputContainer label, .modal__contact .inputContainer input, .modal__contact .inputContainer textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1em;
+  border: none;
+  font: inherit;
+}
+
+.modal__contact .inputContainer label {
+  background: #e0e0e0;
+  line-height: 1.75em;
+  border-right: 1px solid #ccc;
+  position: relative;
+}
+
+.modal__contact .inputContainer textarea, .modal__contact .inputContainer input {
+  width: 85%;
+  max-width: 85%;
+}
+
+@media (min-width: 800px) {
+
+  .modal__contact .inputContainer textarea, .modal__contact .inputContainer input {
+    width: 90%;
+    max-width: 90%
+  }
+}
+
+.modal__contact .inputContainer textarea {
+  margin-bottom: -5px;
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  resize: none;
+}
+
+@media (min-width: 800px) {
+
+  .modal__contact .inputContainer textarea {
+    height: 150px
+  }
+}
+
+.modal__contact .inputContainer input {
+  padding-left: 10px;
+}
+
+.modal__contact .inputContainer.success {
+  border-color: #76d176;
+}
+
+.modal__contact .inputContainer.success label {
+  background: #82E682;
+  border-color: #76D176;
+}
+
+.modal__contact .inputContainer.success input, .modal__contact .inputContainer.success textarea {
+  color: #0A8754;
+}
+
+.modal__contact .inputContainer.error {
+  border-color: #e85454;
+}
+
+.modal__contact .inputContainer.error .message {
+  width: 100%;
+}
+
+.modal__contact .inputContainer.error label {
+  background: #FF5C5C;
+  border-color: #e85454;
+}
+
+.modal__contact .inputContainer.error input, .modal__contact .inputContainer.error textarea {
+  color: #FF5C5C;
+}
+
+.modal__contact.success {
+  overflow: hidden;
+  height: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.modal__contact.success form {
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.userImage, .emailImage {
+	width: 5%;
+	position: relative;
+	top: 2px;
+	left: 1px;
+}
+
+.userImage {
+	top: 4px;
+}
+
+.btn-submit {
+			border: none;
+			border-radius: 3px;
+			font: inherit;
+			padding: 10px 18px;
+			margin-top: 10px;
+			float: right;
+			width: auto;
+			-webkit-transition: background 0.5s ease;
+			transition: background 0.5s ease;
+		}
+
+.btn-submit:hover {
+  background: #B67521;
 }
 
 .social-icons {

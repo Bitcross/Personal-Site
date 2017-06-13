@@ -48,7 +48,6 @@
       <div class="wrapper">
         <h1 class="large-hero__title">Hi, I'm Chris.</h1>
         <p class="large-hero__description">I'm a front-end web developer, still looking for a cool job title. </p>
-        <p><a href="#" class="btn btn--orange btn--large open-modal">Let's Chat</a></p>
       </div>
     </div>
   </div>
@@ -175,15 +174,30 @@
 
   <div class="modal">
     <div class="modal__inner">
-      <h2 class="section-title section-title--blue section-title--less-margin"><span class="icon icon--mail section-title__icon"></span> Get in <strong>Touch</strong></h2>
+      <h2 class="section-title section-title--blue section-title--less-margin">Get in <strong>Touch</strong></h2>
       <div class="wrapper wrapper--narrow">
-        <p class="modal__description">We will have an online order system in place soon. Until then, connect with us on any of the platforms below!</p>
-      </div>
-      <div class="social-icons">
-        <a href="#" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-        <a href="#" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+      <p class="modal__description">If you'd like to reach out, please fill out the form below and I'll get back to you. Alternatively, we can connect via <a href="https://www.linkedin.com/in/cmooney1423/" >LinkedIn.</a></p>
+        <div class="modal__contact">
+          <form action="https://formspree.io/chris@chrismooney.us" method="POST" name="contactForm">
+          <div class="inputContainer">
+            <label for="name">
+              <span class="user"><img class="userImage" src="assets/images/icons/user.svg"></span>
+            </label>
+            <input name="name" id="name" type="text" placeholder="Your Name...">
+            <input type="hidden" name="_subject" value="Message from chrismooney.us visitor!" />
+          </div>
+          <div class="inputContainer">
+            <label for="email">
+            <span><img class="emailImage" src="assets/images/icons/mail.svg"></span>
+            </label>
+            <input name="email" id="email" type="email" placeholder="Your Email...">
+          </div>
+          <div class="inputContainer">
+            <textarea name="message" id="message" rows="10" placeholder="Enter your message..."></textarea>
+          </div>
+          <input id="submitBtn" class="btn btn--orange btn-submit" type="submit" value="Send">
+          </form>
+        </div>
       </div>
     </div>
     <div class="modal__close">X</div>
